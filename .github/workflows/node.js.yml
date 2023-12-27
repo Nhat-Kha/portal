@@ -32,4 +32,4 @@ jobs:
     # - name: Run npm start
     - run: npm start &
     - name: Debug npm start completion
-      run: echo "npm start completed."
+    - run: echo "npm start completed."
