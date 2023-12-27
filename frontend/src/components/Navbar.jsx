@@ -20,7 +20,7 @@ export default function Navbar({ user, role }) {
               <Link className="flex pt-1" to="/">
                 <img className="md:pl-5 pl-2" src={logo} alt="logo" />
                 <h1 className="md:pl-2 pl-2 text-3xl text-[#F2994A] font-medium hover:opacity-60">
-                  JobPortal
+                  Search
                 </h1>
               </Link>
 
