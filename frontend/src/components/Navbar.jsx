@@ -37,7 +37,7 @@ export default function Navbar({ user, role }) {
                   className="lg:block hidden text-[#333333] text-lg font-semibold pl-3 pr-6 py-2 hover:opacity-60"
                   to="/companies"
                 >
-                  Companies
+                  Recruiter
                 </Link>
 
                 <Link
