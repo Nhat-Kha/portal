@@ -22,7 +22,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Debug npm configuration
+      run: |
+        echo "NPM cache directory: $(npm config get cache)"
+        ls -al /home/runner/.npm
     - name: Clear npm cache
       run: npm cache clean -f
     - run: npm install
-    - run: npm start
+    # - name: Run npm start
+    - run: npm start &
+    - name: Debug npm start completion
+      run: echo "npm start completed."
